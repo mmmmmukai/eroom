@@ -13,7 +13,13 @@ h2 {
    margin-right: 25%;
    font-family: Krungthep;
 }
-
+@media(max-width:600px){
+  h2 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 
 /* オレンジ背景の見出し*/
@@ -76,6 +82,12 @@ img {
   height: auto;
   float: left;
 }
+@media(max-width:700px){
+  .text-side-img {
+    width: 100%;
+  }
+}
+
 .text-side-img img {
   width: 100%;
    border-radius: 2%;
@@ -97,7 +109,11 @@ img {
   margin-bottom: 30px;
   float: left;
 } 
-
+@media(max-width:700px){
+  .article-text {
+    width: 100%;
+   }
+}
 .article-text p {
   font-size: 17px;
   letter-spacing: 2px;
@@ -110,7 +126,7 @@ img {
 .article-box {
    font-family: Arial Narrow;
    width: 18%;
-   margin-left: 9%;
+   margin-left: 6%;
    height: auto;
    float: left;
    background-color:;
@@ -121,6 +137,19 @@ img {
    border-bottom: 8px solid #ee7800;
    border-top: 8px solid #ee7800;
 }   
+@media(max-width:700px){
+  .article-box {
+   width: 30%;
+   margin-left: 3%;
+  }
+}
+
+@media(max-width:500px){
+  .article-box {
+   width: 45%;
+   margin-left: 0;
+  }
+}
 .article-box img {
    width: 100%;
    height: ;
@@ -183,8 +212,21 @@ video#bgvid {
   text-align: center;
   letter-spacing: 10px;
 }
+@media(max-width:900px){
+  .video-text {
+    font-size: 30px;
+    position: absolute;
+     top: 150px;
+  }
+}
 
-
+@media(max-width:550px){
+  .video-text {
+    font-size: 30px;
+    position: absolute;
+     top: 100px;
+  }
+}
 /* NEWS */
 
 .article-2 {
@@ -206,6 +248,11 @@ video#bgvid {
   padding-left: 3%;
   padding-right: 3%;
 }
+@media(max-width:700px){
+  .date {
+    width: 50%; 
+  }
+}
 .topic {
   width: 15%;
   float: left;
@@ -215,13 +262,33 @@ video#bgvid {
   padding-top: 2px;
   padding-bottom: 2px;
 }
+@media(max-width:700px){
+  .topic {
+   width: 50%;
+  }
+}
 .infomation {
  width: 70%;
  float: left;
 } 
+@media(max-width:700px){
+  .infomation {
+    width: 100%;
+   }
+}
 
-
-
+/* ACCESS　地図 */
+.map {
+  width: 40%;
+  height: 500px;
+}
+@media(max-width:700px){
+  .map {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 50px;
+  }
+}  
 /* 共通で使っているもの */
 
 .margin0 {

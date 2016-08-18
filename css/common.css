@@ -67,6 +67,11 @@ a:active {/*クリック中*/
   float: left;
   padding-left: 2%;
 }
+@media(max-width:770px){
+  .header-top {
+    width: 100%;
+  }
+}
 
 /* header のロゴ */
 .header-top-title {
@@ -96,6 +101,11 @@ ul {
   margin-top: 20px;
   letter-spacing: 5px;
   float: left; 
+}
+@media(max-width:770px) {
+  ul {
+   display: none;
+  }
 }
 
 li {
