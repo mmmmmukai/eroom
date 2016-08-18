@@ -46,11 +46,15 @@ a:active {/*クリック中*/
 #header {
  width: 100%;
  height: auto;
- background-color: #ea5549;
+ background-color: #ee7800;
+ opacity: 0.8;
  float: left;
  color: #ffffff;
  z-index: 10;
- box-shadow:0 3px 10px #dcdcdc;
+ box-shadow:0 3px 10px #24140e;
+ position: fixed;
+  top: 0;
+  left: 0;
 }
 .header-top {
   width: 40%;  
@@ -134,7 +138,7 @@ li {
   padding-left: 10%;
   padding-right: 10%; 
   float:left ; 
-  background-color: #fff9f5; 
+  background-color:; 
 }
 .fixed {
     position: fixed;
@@ -142,4 +146,10 @@ li {
     width: 100%;
     z-index: 10000;
 }
-
+#footer {
+ width: 100%;
+ height:auto;
+ float: left;
+ background-color: #ee7800;
+ color: #ffffff;
+}
