@@ -50,11 +50,16 @@ h3 {
   box-shadow: 0 1px 20px 0 rgba(0,0,0,0.4) inset;
   margin-top: 50px;
 }
-
+.wrapper-gray-img {
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 13px;
+}
 .wrapper-gray img {
-   width: 20%;
-   margin-left: 5%;
-   float: left;
+   width: 100%;
 }
 img {
    border-radius: 2%;
