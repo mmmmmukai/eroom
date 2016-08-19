@@ -44,7 +44,6 @@ h3 {
   background-color: #F4F4F4;
   float: left;
   box-shadow: 0 1px 20px 0 rgba(0,0,0,0.4) inset;
-  margin-top: 50px;
   padding-bottom: 50px;
 }
 .wrapper-gray {
@@ -81,6 +80,13 @@ img {
    -webkit-border-radius: 2%;   
 }
 
+.wrapper-gray p {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  border-bottom:2px solid #4e454a;
+}
 
 
 /* STAFF,SYSTEM */
@@ -114,8 +120,6 @@ img {
    -webkit-border-radius: 2%;   
   margin-bottom: 30px;
 }
-
-
 
 /* SYSTEM,HOME,ACCESS の右隣の文章 */
 
@@ -166,7 +170,7 @@ img {
 @media(max-width:500px){
   .article-box {
    width: 45%;
-   margin-left: 0;
+   margin-left: 5%;
   }
 }
 .article-box img {
@@ -204,47 +208,77 @@ h4 {
 /* HOME のvideo　*/
 
 .video-contents {
-  width: 100% !important;  
+  width: 100%;
   height: auto;
 }
+
 video#bgvid {
   position: fixed; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: auto; height: auto; z-index: -100;
   background: url(/video/tompoederbachlasvegasblvdcopyforvimeobyphilipbloommp4.jpg) no-repeat;
   background-size: cover;
-  position: relative;
 }
 @media screen and (max-device-width: 800px) {
   html { background: url(/video/tompoederbachlasvegasblvdcopyforvimeobyphilipbloommp4.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
-
-.video-text {
+#sp_mode {
+    display:none;
+    width: 100%;
+    float: left;
+}
+@media(max-width:500px){
+  #sp_mode {
+   display: block;
+  }
+}
+#pc_mode{
+    display:block;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.main-top-img img{
   width: 100%;
-  position: absolute;
-   top: 280px;
-  font-size: 60px;
-  color: #ffffff;
-  line-height: 1.5;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 10px;
 }
-@media(max-width:900px){
-  .video-text {
-    font-size: 30px;
-    position: absolute;
-     top: 150px;
-  }
+@media(max-width:500px){
+   #pc_mode {
+     display: none;
+   }
+}.overlay {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0,0,0,0.0);
+  position:absolute;
+   top: 0;
+}
+.catch {
+   margin:10%;
+   color: #FFFFFF;
+   font-weight: bold;
+   font-size:5em;
+   text-align: center;
+   line-height: 1.5em;
+}
+@media(max-width:1000px) {
+.catch {
+   font-size: 50px;
+}
 }
 
-@media(max-width:550px){
-  .video-text {
-    font-size: 30px;
-    position: absolute;
-     top: 100px;
-  }
+@media(max-width:700px) {
+.catch {
+   font-size: 40px;
+   padding-top: 70px;
+}
+}
+
+@media(max-width:550px) {
+.catch {
+   font-size: 25px;
+   padding-top: 50px;
+}
 }
 /* NEWS */
 
@@ -293,6 +327,7 @@ video#bgvid {
 @media(max-width:700px){
   .infomation {
     width: 100%;
+    margin-top: 10px;
    }
 }
 
@@ -308,6 +343,79 @@ video#bgvid {
     padding-bottom: 50px;
   }
 }  
+
+
+
+/* BLOG */
+#main70 {
+   width: 70%;
+   height: auto;
+   float: left;
+   padding-right: 5%;
+ }
+@media(max-width:800px){
+  #main70 {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+#side30 {
+  width: 30%;
+  height: auto;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+@media(max-width:800px) {
+  #side30 {
+   display: none;
+  }
+}
+.category-p {
+  width: 90%;
+  margin-left: 10%;
+  font-family: Krungthep;
+  border-radius: 6px;
+   -moz-border-radius: 6px;
+   -weblit-border-radius: 6px;
+   padding-top: 20px;
+   padding-bottom: 15px;
+   margin-bottom: 15px;
+   border-bottom: 8px solid #ee7800;
+   border-top: 8px solid #ee7800;
+}
+h6 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000000;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.blog-main-img {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.blog-main-img img {
+  width: 100%;
+}
+.category-ul {
+  width: 100%;
+  height: auto;
+  float: left;
+}  
+.category-li {
+  width: 90%;
+  float: left;
+  font-size: 14px;
+  color: #000000;
+  height: 50px;
+  font-family:Krungthep;
+  border-bottom: 2px dotted #000000;
+  margin-left: 10%; 
+}
+
 /* 共通で使っているもの */
 
 .margin0 {
