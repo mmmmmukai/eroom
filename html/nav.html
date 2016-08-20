@@ -1,4 +1,17 @@
 <nav>
+  <script>
+            $(function(){  
+            $('.menubtn').on('click', function(){
+              $('.menubtn').hide('slow');
+              $('.menulist').show('slow');
+            });
+            
+            $('.closebtn').on('click', function(){
+              $('.menulist').hide('slow');
+              $('.menubtn').show('slow');
+            });
+            }); 
+  </script>
   <ul class="menubtn">
     <li class="menubtn-child"></li>
     <li class="menubtn-child"></li>
@@ -11,5 +24,6 @@
    <li class="menulist-child">LESSON</li>
    <li class="menulist-child">PARTY&EVET</li>
    <li class="menulist-child">ACCESS</li>
+   <li class="menulist-child closebtn"><span>×close×</span></li>
   </ul>
 </nav>
