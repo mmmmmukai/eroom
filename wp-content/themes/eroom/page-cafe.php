@@ -1,0 +1,68 @@
+<?php
+
+/****************************************
+  Template Name: system
+*****************************************/
+
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cf.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/top.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+      <script>
+         $(function(){
+            $("#header").load("html/header.html");
+            $("#footer").load("html/footer.html");
+            $("#nav").load("html/nav.html");
+          });
+      </script>
+
+    <title>ERoom★cafe</title>
+  </head>
+
+  <body>
+    <header id="header">   
+    </header>
+
+    <nav id="nav">
+    </nav>
+
+    <div id="wrapper">
+    <main id="main-article">   
+     <article class="article-1">
+      <h2>SYSTEM</h2>
+      <div class="text-side-img"><img src="images/photo_03.png"></div>
+      <section class="article-text">
+        <h3>◆営業時間◆</h3><p>月・火・水曜日　子供英会話<br>木曜日　17時〜22時<br>金曜日　17時～22時<br>土曜日　17時～22時<br>日曜日・祝日　closed</p>
+        <h3>◆料金◆</h3><p>一律１時間＝1,000円（税込）以後30分毎に500円（税込）<br>Native English speakers Free Entrance（１ドリンク制）</p>
+        <h3>◆ドリンク◆</h3><p>各250円（税込）</p>
+        <p>料金にはコーヒーまたは紅茶が一杯付きます。<br>その他のソフトドリンク、スナック等をご希望のお客様はメニューよりオーダー下さい。</p>
+        <p>・最終入店は閉店の１時間前とさせて頂きます。<br>・飲み物、食べ物のお持ち込みはご遠慮お願い致します。<br>・全席禁煙</p>
+      <h3>POINT CARD</h3>
+        <p>1時間で1つスタンプを押します。</p>
+　  　　<p>10スタンプが貯まれば、1時間無料。</p>
+        <p>◆カードをお持ちでないお客様、受付にてお声がけください。</p>
+        <p>※クラスなどにつきましては、スタンプは押されませんので、ご了承ください。</p>
+      </section>
+    </article>
+   </main>
+
+   </div> 
+   
+   <footer id="footer">
+   </footer>
+  </body>
+
+</html>
+
+

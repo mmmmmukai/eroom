@@ -1,0 +1,29 @@
+<nav id="nav">
+  <script>
+            $(function(){  
+            $('.menubtn').on('click', function(){
+              $('.menubtn').hide('slow');
+              $('.menulist').show('slow');
+            });
+            
+            $('.closebtn').on('click', function(){
+              $('.menulist').hide('slow');
+              $('.menubtn').show('slow');
+            });
+            }); 
+  </script>
+  <ul class="menubtn">
+    <li class="menubtn-child"></li>
+    <li class="menubtn-child"></li>
+    <li class="menubtn-child"></li>
+  </ul>
+  <ul class="menulist">
+   <li class="menulist-child">HOME</li>
+   <li class="menulist-child">SYSTEM</li>
+   <li class="menulist-child">STAFF</li>
+   <li class="menulist-child">LESSON</li>
+   <li class="menulist-child">PARTY&EVET</li>
+   <li class="menulist-child">ACCESS</li>
+   <li class="menulist-child closebtn"><span>×close×</span></li>
+  </ul>
+</nav>
