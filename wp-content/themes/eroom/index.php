@@ -1,7 +1,7 @@
 <?php 
 
 /****************************************
-  index
+  Template Name: index
 *****************************************/
 
 get_header();?>
@@ -100,5 +100,3 @@ get_header();?>
    </div>
 
   <?php get_footer(); ?>
-  </body>
-</html>
