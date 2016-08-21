@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php 
+
+/****************************************
+  Template Name: party_and_event
+  cafe-02.html
+*****************************************/
+
+get_header();?>
+
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -28,7 +38,9 @@
     </header>
    
     <nav id="nav">
-    </nav>
+    </nav> -->
+
+    <?php get_template_part('static/inc/nav');?>
 
     <div id="wrapper">
     <main id="main-article">   
@@ -51,8 +63,7 @@
 
    </div> 
    
-   <footer id="footer">
-   </footer>
+   <?php get_footer(); ?>
   </body>
 
 </html>

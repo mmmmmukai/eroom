@@ -51,7 +51,7 @@
     <li><a href="/system/">SYSTEM</a></li>
     <li><a href="/staff/">STAFF</a></li>
     <li><a href="/lesson/">LESSON</a></li>
-    <li><a href="/party/">PARTY<br>&<br>EVENT</a></li>
+    <li><a href="/party_and_event/">PARTY<br>&<br>EVENT</a></li>
     <li><a href="/access/">ACCESS</a></li>
     <li>LINK</li>
    </ul>
