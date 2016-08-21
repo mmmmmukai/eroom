@@ -28,7 +28,7 @@
   <style>
     video { display: block; }
   </style>
-  <title><!-- 英会話カフェERoomへようこそ!!|都内市ヶ谷の英会話カフェ|EROOM --></title>
+  <title><?php wp_title( '::', true, 'right' ); ?> <?php bloginfo( 'name' ); ?></title>
 </head>
 
 <body>

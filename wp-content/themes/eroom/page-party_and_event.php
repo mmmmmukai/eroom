@@ -46,7 +46,7 @@ get_header();?>
     <main id="main-article">   
      <article class="article-1">
       <h2>PARTY & EVENT</h2>
-      <div class="text-side-img"><img src="?=get_template_directory_uri()?>/static/images/photo_06.png"></div>
+      <div class="text-side-img"><img src="<?=get_template_directory_uri()?>/static/images/photo_06.png"></div>
       <section class="article-text">
         <h3>次回パーティのご案内</h3><p><span>2015年2月23日(土)17時〜ERoomnにて</span></p>
         <p>どなたでもご参加出来るアットホームPartyです。</p>

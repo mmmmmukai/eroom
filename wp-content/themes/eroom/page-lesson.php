@@ -40,6 +40,8 @@ get_header();?>
    
     <nav id="nav">
     </nav> -->
+
+    <?php get_template_part('static/inc/nav');?>
   
    <div id="wrapper"> 
    <main class="main-article">
@@ -77,8 +79,7 @@ get_header();?>
   </main>
   </div>
   
-  <footer id="footer">
-  </footer>
+  <?php get_footer(); ?>
   </body>
 
 </html>

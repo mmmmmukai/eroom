@@ -52,21 +52,21 @@ get_header();?>
      <h2>PAST OF STAFF</h2>
          <article class="article-box">
           <h4>Holly</h4>
-          <div class="article-box-img"><img src="?=get_template_directory_uri()?>/static/images/face_Holly.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_Holly.png"></div>
           <p class="article-top-text-date">Week : Fri & Sat</p>
           <p class="article-top-text-message">-</p>
           <img src="" class="article-top-text-flag">
          </article>
          <article class="article-box">
           <h4>Mathew</h4>
-          <div class="article-box-img"><img src="?=get_template_directory_uri()?>/static/images/face_mathew.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_mathew.png"></div>
           <p class="article-top-text-date">Week : Sat</p>
           <p class="article-top-text-message">-</p>
           <img src="" class="article-top-text-flag"> 
          </article>
          <article class="article-box">
           <h4>Chris</h4>
-          <div class="article-box-img"><img src="?=get_template_directory_uri()?>/static/images/face_chris.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_chris.png"></div>
           <p class="article-top-text-date">Week :-</p>
           <p class="article-top-text-message">-</p>
           <a href="" class="article-link"></a>
@@ -74,7 +74,7 @@ get_header();?>
          </article>
          <article class="article-box">
           <h4>Rie</h4>
-          <div class="article-box-img"><img src="?=get_template_directory_uri()?>/static/images/face_rie.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_rie.png"></div>
           <p class="article-top-text-date">Week :-</p>
           <p class="article-top-text-message">-</p>
           <a href="" class="article-link"></a>
@@ -82,7 +82,7 @@ get_header();?>
          </article>
          <article class="article-box">
           <h4>Sofia</h4>
-          <div class="article-box-img"><img src="?=get_template_directory_uri()?>/static/images/face_sofia.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_sofia.png"></div>
           <p class="article-top-text-date">Week :-</p>
           <p class="article-top-text-message">-</p>
           <a href="" class="article-link"></a>
@@ -90,7 +90,7 @@ get_header();?>
          </article>
          <article class="article-box">
           <h4>Sabrina</h4>
-          <div class="article-box-img"><img src="?=get_template_directory_uri()?>/static/images/face_sabrina.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_sabrina.png"></div>
           <p class="article-top-text-date">Week :-</p>
           <p class="article-top-text-message">Will come back in Sep!</p>
           <a href="" class="article-link"></a>
@@ -98,7 +98,7 @@ get_header();?>
          </article>
          <article class="article-box">
           <h4>Jeff</h4>
-          <div class="article-box-img"><img src="?=get_template_directory_uri()?>/static/images/face_jeff.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_jeff.png"></div>
           <p class="article-top-text-date">Week :-</p>
           <p class="article-top-text-message">Went back home.</p>
           <a href="" class="article-link"></a>
