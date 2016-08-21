@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php 
+
+/****************************************
+  Template Name: staff
+  page-cafe-01
+*****************************************/
+
+get_header();?>
+
+
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -33,10 +44,9 @@
   <body>
 
     <header id="header">   
-    </header>
+    </header> -->
 
-    <nav id="nav">
-    </nav>
+    <?php get_template_part('static/inc/nav');?>
 
     <div id="wrapper">
      <h2>PAST OF STAFF</h2>
@@ -96,8 +106,7 @@
          </article>
 
     </div>
-  <footer id="footer">
-  </footer>
+    <?php get_footer(); ?>
   </body> 
 
 </html>

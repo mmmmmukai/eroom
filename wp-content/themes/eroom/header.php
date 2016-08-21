@@ -28,7 +28,7 @@
   <style>
     video { display: block; }
   </style>
-  <title>英会話カフェERoomへようこそ!!|都内市ヶ谷の英会話カフェ|EROOM</title>
+  <title><!-- 英会話カフェERoomへようこそ!!|都内市ヶ谷の英会話カフェ|EROOM --></title>
 </head>
 
 <body>
@@ -40,12 +40,19 @@
    </div>
 
    <ul class="side-ul">
-    <li><a href="/index.html">HOME</a></li>
+    <!-- <li><a href="/">HOME</a></li>
     <li><a href="/cafe.html">SYSTEM</a></li>
     <li><a href="/cafe-01.html">STAFF</a></li>
     <li><a href="/lesson.html">LESSON</a></li>
     <li><a href="/cafe-02.html">PARTY<br>&<br>EVET</a></li>
     <li><a href="/access.html">ACCESS</a></li>
+    <li>LINK</li> -->
+    <li><a href="/">HOME</a></li>
+    <li><a href="/system/">SYSTEM</a></li>
+    <li><a href="/staff/">STAFF</a></li>
+    <li><a href="/lesson/">LESSON</a></li>
+    <li><a href="/party/">PARTY<br>&<br>EVENT</a></li>
+    <li><a href="/access/">ACCESS</a></li>
     <li>LINK</li>
    </ul>
   </div>

@@ -50,8 +50,7 @@ get_header(); ?>
     </article> 
    </main>
   </div>
-  <footer id="footer">
-  </footer>
+  <?php get_footer(); ?>
 
   </body>
 </html>
