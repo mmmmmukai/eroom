@@ -52,7 +52,7 @@ get_header();?>
      <h2>PAST OF STAFF</h2>
          <article class="article-box">
           <h4>Holly</h4>
-          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_Holly.png"></div>
+          <div class="article-box-img"><img src="<?=get_template_directory_uri()?>/static/images/face_holly.png"></div>
           <p class="article-top-text-date">Week : Fri & Sat</p>
           <p class="article-top-text-message">-</p>
           <img src="" class="article-top-text-flag">

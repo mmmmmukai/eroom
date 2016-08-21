@@ -216,11 +216,11 @@ video#bgvid {
   position: fixed; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: auto; height: auto; z-index: -100;
-  background: url(/video/tompoederbachlasvegasblvdcopyforvimeobyphilipbloommp4.jpg) no-repeat;
+  background: url(/static/video/tompoederbachlasvegasblvdcopyforvimeobyphilipbloommp4.jpg) no-repeat;
   background-size: cover;
 }
 @media screen and (max-device-width: 800px) {
-  html { background: url(/video/tompoederbachlasvegasblvdcopyforvimeobyphilipbloommp4.jpg) #000 no-repeat center center fixed; }
+  html { background: url(/static/video/tompoederbachlasvegasblvdcopyforvimeobyphilipbloommp4.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
 #sp_mode {

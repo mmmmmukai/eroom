@@ -44,7 +44,7 @@ get_header();?>
     <main id="main-article">   
      <article class="article-1">
       <h2>SYSTEM</h2>
-      <div class="text-side-img"><img src="images/photo_03.png"></div>
+      <div class="text-side-img"><img src="<?=get_template_directory_uri()?>/static/images/photo_03.png"></div>
       <section class="article-text">
         <h3>◆営業時間◆</h3><p>月・火・水曜日　子供英会話<br>木曜日　17時〜22時<br>金曜日　17時～22時<br>土曜日　17時～22時<br>日曜日・祝日　closed</p>
         <h3>◆料金◆</h3><p>一律１時間＝1,000円（税込）以後30分毎に500円（税込）<br>Native English speakers Free Entrance（１ドリンク制）</p>
