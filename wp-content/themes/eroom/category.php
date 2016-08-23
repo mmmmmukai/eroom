@@ -8,7 +8,7 @@ get_header();?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
         <article class="article-1">
           <p><?= get_the_date(); ?></p>
-          <h3><?php the_title();?></h3>
+          <a href="<?=the_permalink();?>"><h3><?php the_title();?></h3></a>
         </article>
       <?php endwhile; else : ?>
       <div class="post">
@@ -16,6 +16,7 @@ get_header();?>
         <p>お探しの記事は見つかりませんでした。</p>
       </div>
       <?php endif; ?>
+      <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     </main>
   </div>
 
