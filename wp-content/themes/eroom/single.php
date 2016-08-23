@@ -8,7 +8,7 @@ get_header();?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
         <article class="article-1">
           <h3><?php the_title();?></h3>
-          <p>カテゴリ:<span style="color:gray;"><?php the_category(', ')?></span></p>
+          <p style="background-color: gray;">カテゴリ:<?php the_category(', ')?></p>
           <section class="article-text width100">
             <?php the_content(); /** コンテンツ */ ?>
           </section>

@@ -8,7 +8,7 @@ get_header();?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
         <article class="article-1">
           <p><?= get_the_date(); ?></p>
-          <p>カテゴリ:<span style="color:gray;"><?php the_category(', ')?></span></p>
+          <p style="background-color: gray;">カテゴリ:<?php the_category(', ')?></p>
           <a href="<?=the_permalink();?>"><h3><?php the_title();?></h3></a>
         </article>
       <?php endwhile; else : ?>
