@@ -13,8 +13,6 @@ function arphabet_widgets_init() {
     'id' => 'category_sidebar',
     'before_widget' => '<div>',
     'after_widget' => '</div>',
-    'before_title' => '<h2">',
-    'after_title' => '</h2>',
   ) );
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
