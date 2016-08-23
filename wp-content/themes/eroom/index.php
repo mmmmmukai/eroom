@@ -23,6 +23,7 @@ get_header();?>
         <p>お探しの記事は見つかりませんでした。</p>
       </div>
       <?php endif; ?>
+      <?php dynamic_sidebar( 'category_sidebar' ); ?>
       <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     </main>
   </div>

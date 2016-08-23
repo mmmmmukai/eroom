@@ -9,11 +9,11 @@
 function arphabet_widgets_init() {
 
   register_sidebar( array(
-    'name' => 'Home right sidebar',
-    'id' => 'home_right_1',
+    'name' => 'category_sidebar',
+    'id' => 'category_sidebar',
     'before_widget' => '<div>',
     'after_widget' => '</div>',
-    'before_title' => '<h2 class="rounded">',
+    'before_title' => '<h2">',
     'after_title' => '</h2>',
   ) );
 }
