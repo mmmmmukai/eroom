@@ -53,7 +53,7 @@
     <li><a href="/lesson/">LESSON</a></li>
     <li><a href="/party_and_event/">PARTY<br>&<br>EVENT</a></li>
     <li><a href="/access/">ACCESS</a></li>
-    <li>LINK</li>
+    <li><a href="/blog/">BLOG</a></li>
    </ul>
   </div>
 
