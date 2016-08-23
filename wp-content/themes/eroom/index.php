@@ -11,7 +11,7 @@ get_header();?>
     <main id="main70">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
         <article class="article-1">
-          <h3><?php the_title();?></h3>
+          <a href="<?=the_permalink();?>"><h3><?php the_title();?></h3></a>
           <section class="article-text width100">
             <?php the_content(); /** コンテンツ */ ?>
           </section>
