@@ -42,16 +42,16 @@ get_header();?>
       </section>
     </article>
     </main>
-    </div>
     <article class="article-1">
     <h2>Q. 現在は閉店中！？</h2> 
-     <section class="article-text">
+     <section class="article-text width100">
         <p><span>A.そうです。英会話カフェEROOMは2年間も休養中</span>です。<br></p>
         <p>2016/09/01からはITスクールとレンタルスペースになっています。</p>
         <p>近々EROOMは英会話カフェとして再開する予定でいます。</p>
         <p>英会話カフェEROOMが再開した際にはfacebookにて告知をします。</p>
       </section> 
     </article>
+    </div>
     <div class="gray">
       <div class="wrapper-gray">
        <div class="wrapper-gray-img">

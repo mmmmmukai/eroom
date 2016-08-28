@@ -16,10 +16,12 @@ get_header();?>
         <h2>記事はありません</h2>
         <p>お探しの記事は見つかりませんでした。</p>
       </div>
-      <?php endif; ?>
-      <?php dynamic_sidebar( 'category_sidebar' ); ?>
-      <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+      <?php endif; ?> 
     </main>
+    <side id="side30">
+        <?php dynamic_sidebar( 'category_sidebar' ); ?>
+    </side> 
+      <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
   </div>
 
 <?php get_footer(); ?>

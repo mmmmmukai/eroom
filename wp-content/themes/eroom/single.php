@@ -19,8 +19,10 @@ get_header();?>
         <p>お探しの記事は見つかりませんでした。</p>
       </div>
       <?php endif; ?>
-      <?php dynamic_sidebar( 'category_sidebar' ); ?>
     </main>
+    <side id="side30">
+        <?php dynamic_sidebar( 'category_sidebar' ); ?>
+    </side>
   </div>
 
 <?php get_footer(); ?>
