@@ -50,7 +50,7 @@
     <li><a href="/lesson.html">LESSON</a></li>
     <li><a href="/cafe-02.html">PARTY<br>&<br>EVET</a></li>
     <li><a href="/access.html">ACCESS</a></li>
-    <li>LINK</li> -->
+     -->
     <li><a href="/">HOME</a></li>
     <li><a href="/cafe_system/">SYSTEM</a></li>
     <li><a href="/staff/">STAFF</a></li>
