@@ -11,7 +11,12 @@ class Mypage extends User_Abstract
 
     public function index()
     {
-        $this->logged_check();
+        if($this->logged_check() == FALSE)
+        {
+            $this->session->set_flashdata('logged_msg', 'まだログインしていません。');
+            redirect('user/login');
+            exit;
+        }
         $this->load->view('user/mypage');
     }
 

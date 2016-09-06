@@ -28,18 +28,18 @@ class Login extends User_Abstract
         if(!$validate)
         {
             $this->load->view('user_login');
-        }
-
-        $this->load->model('User_user_model');
-        $is_user = $this->User_user_model->is_user();
-
-        if(empty($is_user))
-        {
-            $this->session->set_flashdata('login_error_msg', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
-            $this->load->view('user/login');
         } else {
-            $this->set_session_data('user', $is_user[0]);
-            redirect('user/mypage');
+            $is_user = $this->User_user_model->is_user();
+
+            if(empty($is_user))
+            {
+                $this->session->set_flashdata('login_error_msg', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
+                $this->load->view('user/login');
+            } else {
+                $this->session->set_flashdata('logged_msg', 'ログインしました。');
+                $this->set_session_data('user', $is_user[0]);
+                redirect('user/mypage');
+            }
         }
 
     }

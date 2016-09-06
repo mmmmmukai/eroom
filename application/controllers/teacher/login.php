@@ -27,19 +27,22 @@ class Login extends Teacher_Abstract
         if(!$validate)
         {
             $this->load->view('teacher/login');
-        }
 
-        $this->load->model('Teacher_teacher_model');
-        $is_teacher = $this->Teacher_teacher_model->is_teacher();
-
-        if(empty($is_teacher))
-        {
-            $this->session->set_flashdata('login_error_msg', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
-            $this->load->view('teacher/login');
         } else {
-            $this->set_session_data('teacher', $is_teacher[0]);
-            redirect('teacher/mypage');
+            
+            $is_teacher = $this->Teacher_teacher_model->is_teacher();
+
+            if(empty($is_teacher))
+            {
+                $this->session->set_flashdata('login_error_msg', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
+                $this->load->view('teacher/login');
+            } else {
+                $this->session->set_flashdata('logged_msg', 'ログインしました。');
+                $this->set_session_data('teacher', $is_teacher[0]);
+                redirect('teacher/mypage');
+            }
         }
+
 
     }
 
