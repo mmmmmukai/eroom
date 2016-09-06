@@ -8,7 +8,7 @@ class User_user_model extends MY_Model {
         $password = md5($this->input->post('password'));
 
         $sql = <<<EOF
-        SELECT id FROM user WHERE email='{$email}' AND password='{$password}' AND delete_flg=0
+        SELECT id FROM User WHERE email='{$email}' AND password='{$password}' AND delete_flg=0
 EOF;
         
         $res = $this->db->query($sql)->result_array();

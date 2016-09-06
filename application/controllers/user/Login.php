@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 require_once 'User_Abstract.php';
 
-class Login extends User_Abstract
+class login extends User_Abstract
 {
     public function __construct()
     {
