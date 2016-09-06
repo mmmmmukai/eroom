@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Cafe_system extends MY_Controller
+class Cafe_System extends MY_Controller
 {
     public function __construct()
     {
