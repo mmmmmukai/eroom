@@ -53,10 +53,10 @@ $route['default_controller'] = 'Main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['access'] = 'User/Access';
-$route['lesson'] = 'User/Lesson';
-$route['party_and_event'] = 'User/Party_And_Event';
-$route['staff'] = 'User/Staff';
-$route['cafe_system'] = 'User/Cafe_System';
+$route['access'] = 'user/Access';
+$route['lesson'] = 'user/Lesson';
+$route['party_and_event'] = 'user/Party_And_Event';
+$route['staff'] = 'user/Staff';
+$route['cafe_system'] = 'user/Cafe_System';
 
 // $route['login/action'] = 'user/login/action';
