@@ -8,7 +8,7 @@ class Teacher_teacher_model extends MY_Model {
         $password = md5($this->input->post('password'));
 
         $sql = <<<EOF
-        SELECT id FROM Teacher WHERE email='{$email}' AND password='{$password}' AND delete_flg=0
+        SELECT id FROM teacher WHERE email='{$email}' AND password='{$password}' AND delete_flg=0
 EOF;
         
         $res = $this->db->query($sql)->result_array();
@@ -19,7 +19,7 @@ EOF;
     public function get_userdata($teacher_id)
     {
         $sql = <<<EOF
-        SELECT id,email,name,language FROM Teacher WHERE id='{$teacher_id}'
+        SELECT id,email,name,language FROM teacher WHERE id='{$teacher_id}'
 EOF;
         $res = $this->db->query($sql)->result_array();
 
