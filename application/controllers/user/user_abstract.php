@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
 class User_Abstract extends MY_Controller {
 
     public function __construct() {
