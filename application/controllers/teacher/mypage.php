@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-require_once 'teacher_abstract.php';
+require_once 'Teacher_Abstract.php';
 
 class Mypage extends Teacher_Abstract
 {
