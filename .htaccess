@@ -3,3 +3,10 @@ RewriteEngine on
 # RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php|blog|static|robots\.txt)
 RewriteRule ^(.*)$ /index.php/$1 [L]
+
+Redirect permanent /access.html http://www.enjoy-eroom.com/access
+Redirect permanent /cafe.html http://www.enjoy-eroom.com/cafe_system
+Redirect permanent /cafe-01.html http://www.enjoy-eroom.com/staff
+Redirect permanent /cafe-02.html http://www.enjoy-eroom.com/party_and_event
+Redirect permanent /access.html http://www.enjoy-eroom.com/access
+Redirect permanent /lesson.html http://www.enjoy-eroom.com/lesson
