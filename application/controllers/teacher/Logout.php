@@ -11,6 +11,7 @@ class Logout extends Teacher_Abstract
     public function index()
     {
         $this->session->unset_userdata('teacher');
+        $this->session->set_flashdata('alert', 'ログアウトしました。');
         redirect('/teacher/login/');
         exit;
     }

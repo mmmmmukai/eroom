@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 require_once 'User_Abstract.php';
 
-class login extends User_Abstract
+class Login extends User_Abstract
 {
     public function __construct()
     {
@@ -15,7 +15,7 @@ class login extends User_Abstract
     {
         if($this->logged_check())
         {
-            $this->session->set_flashdata('logged_msg', 'すでにログインしています');
+            $this->session->set_flashdata('alert', 'すでにログインしています');
             redirect('user/mypage');
             exit;
         }
@@ -33,10 +33,10 @@ class login extends User_Abstract
 
             if(empty($is_user))
             {
-                $this->session->set_flashdata('login_error_msg', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
+                $this->session->set_flashdata('error', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
                 $this->load->view('user/login');
             } else {
-                $this->session->set_flashdata('logged_msg', 'ログインしました。');
+                $this->session->set_flashdata('alert', 'ログインしました。');
                 $this->set_session_data('user', $is_user[0]);
                 redirect('user/mypage');
             }

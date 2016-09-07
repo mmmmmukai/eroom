@@ -7,8 +7,8 @@
 
 <?php
   echo validation_errors();
-  echo $this->session->flashdata('logged_msg');
-  echo $this->session->flashdata('login_error_msg');
+  echo $this->session->flashdata('alert');
+  echo $this->session->flashdata('error');
   echo form_open('/teacher/login/action/');
   echo form_label('Email', 'email'); 
   echo form_input('email', set_value('email'));

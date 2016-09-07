@@ -11,6 +11,7 @@ class Logout extends User_Abstract
     public function index()
     {
         $this->session->unset_userdata('user');
+        $this->session->set_flashdata('alert', 'ログアウトしました。');
         redirect('/user/login/');
         exit;
     }

@@ -14,7 +14,7 @@ class Login extends Teacher_Abstract
     {
         if($this->logged_check())
         {
-            $this->session->set_flashdata('logged_msg', 'すでにログインしています');
+            $this->session->set_flashdata('alert', 'すでにログインしています');
             redirect('teacher/mypage');
             exit;
         }
@@ -34,15 +34,14 @@ class Login extends Teacher_Abstract
 
             if(empty($is_teacher))
             {
-                $this->session->set_flashdata('login_error_msg', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
+                $this->session->set_flashdata('error', 'もう一度メールアドレスもしくはパスワードをご確認ください。');
                 $this->load->view('teacher/login');
             } else {
-                $this->session->set_flashdata('logged_msg', 'ログインしました。');
+                $this->session->set_flashdata('alert', 'ログインしました。');
                 $this->set_session_data('teacher', $is_teacher[0]);
                 redirect('teacher/mypage');
             }
         }
-
 
     }
 

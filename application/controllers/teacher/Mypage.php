@@ -14,7 +14,7 @@ class Mypage extends Teacher_Abstract
 
         if($this->logged_check() == FALSE)
         {
-            $this->session->set_flashdata('logged_msg', 'まだログインしていません。');
+            $this->session->set_flashdata('alert', 'まだログインしていません。');
             redirect('teacher/login');
             exit;
         }
@@ -23,7 +23,7 @@ class Mypage extends Teacher_Abstract
         $res = $this->Teacher_teacher_model->get_userdata($teacher_session['id']);
         if(!array_key_exists(0, $res))
         {
-            $this->session->set_flashdata('logged_msg', 'セッション期限が切れました。もう一度ログインしてください。');
+            $this->session->set_flashdata('alert', 'セッション期限が切れました。もう一度ログインしてください。');
             redirect('teacher/login');
             exit;
         }
