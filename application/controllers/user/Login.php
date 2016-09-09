@@ -6,7 +6,6 @@ class Login extends User_Abstract
     public function __construct()
     {
         parent::__construct();
-        $this->load->helper('url');
         $this->load->helper('form');
         $this->load->library('form_validation');
     }
@@ -27,9 +26,11 @@ class Login extends User_Abstract
         $validate = $this->_check_user_login_validate();
         if(!$validate)
         {
-            $this->load->view('user_login');
+            $this->load->view('user/login');
         } else {
-            $is_user = $this->User_user_model->is_user();
+            $params['email'] = $this->input->post('email', TRUE);
+            $params['password'] = $this->input->post('password', TRUE);
+            $is_user = $this->User_user_model->is_user($params);
 
             if(empty($is_user))
             {
@@ -46,8 +47,8 @@ class Login extends User_Abstract
 
     private function _check_user_login_validate()
     {
-        $this->form_validation->set_rules('email', 'メールアドレス', 'required');
-        $this->form_validation->set_rules('password', 'パスワード', 'required');
+        $this->form_validation->set_rules('email', 'メールアドレス', 'trim|required');
+        $this->form_validation->set_rules('password', 'パスワード', 'trim|md5|required');
         $this->form_validation->set_message('required', '%sは必須項目です。');
         $this->form_validation->set_error_delimiters('<div class="error_txt">', '</div>');
         return $this->form_validation->run();

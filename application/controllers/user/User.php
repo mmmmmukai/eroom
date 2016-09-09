@@ -6,12 +6,6 @@ class User extends User_Abstract
     public function __construct()
     {
         parent::__construct();
-        $this->load->helper('url');
         $this->load->library('form_validation');
-    }
-
-    public function index()
-    {
-        echo "hello user";
     }
 }
